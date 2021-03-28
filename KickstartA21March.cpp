@@ -1,17 +1,18 @@
 #include<iostream>
 #include<string.h>
+#include<math.h>
 using namespace std;
 
 int main(){
     int t;
     cin>>t;
-    while(t--){
+    for(j=1;j<=t;j++){
         int n,k,t=0,h;
         cin>>n>>k;
         string s;
         cin>>s;
         for(int i=0;i<=n/2;i++){
-            if(s[i]==s[n-i]){
+            if(s[i]==s[n-i-1]){
                continue;
             }
             else{
@@ -22,9 +23,9 @@ int main(){
             h=0;
         }
         else{
-            h=k-t;
+            h=abs(k-t);
         }
-        cout<<h+2<<endl;
+        cout<<"Case #"<<j<<": "<<h<<endl;
     }
     return 0;
 }
