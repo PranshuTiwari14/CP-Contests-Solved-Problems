@@ -1,2 +1,2 @@
-# HackerRank-Solved-Problems
+# Solved-Problems
 Solution of Problems based on Data Structures and Algorithm.
