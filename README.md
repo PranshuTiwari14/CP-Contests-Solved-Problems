@@ -1,2 +1,2 @@
 # Solved-Problems
-Solution of Problems based on Data Structures and Algorithm.
+Problems solved during contests on different platforms like Codeforces and Codechef.
