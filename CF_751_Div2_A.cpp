@@ -6,26 +6,28 @@ int main () {
     int t;
     cin >> t;
     while(t--) {
-        int n;
-        cin >> n;
-        int a[n+1] , b[2001] = {0};
-        for(int i = 1; i <= n; i++) {
-            cin >> a[i];
-            b[a[i]] ++;
+        string s;
+        cin >> s;
+        char min = 'z';
+        int pos = -1;
+        for(int i = 0; i < s.length(); i++) {
+            if(s[i] <= min) {
+                min = s[i];
+                pos = i;
+            }
         }
-
-        for(int i = 1; i <= n; i++) {
-            a[i] = b[a[i]];
+        string a = "";
+        a += min;
+        string b ;
+        for(int i = 0; i < s.length(); i++) {
+            if(i == pos) {
+                continue;
+            }
+            else{
+                b += s[i];
+            }
         }
-        
-        int q;
-        cin >> q;
-        for(int i =1; i <= q; i++) {
-            int x, k;
-            cin >> x >> q;
-
-
-        }
+        cout << a << " " << b << endl;
     }
     return 0;
 }
